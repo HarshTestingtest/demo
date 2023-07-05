@@ -54,6 +54,7 @@ class ForgotPasswordController extends Controller
 
     public function submitResetPasswordForm(Request $request)
     {
+        // harsh
         $request->validate([
             'password' => 'required|string|min:6|confirmed',
             'password_confirmation' => 'required'
